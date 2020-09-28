@@ -20,7 +20,6 @@ class epsGreedyAgent:
 
     def recommendArm(self, bandit, history):
         #Hey, your code goes here!
-        print(self.avg_payout)
         # Update payouts
         if len(history):
             arm, reward = history[-1]
