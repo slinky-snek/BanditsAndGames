@@ -33,6 +33,15 @@ class breakthrough():
             big_list.append(small_list)
         self.board = big_list
 
+    #####
+    # Returns result of game
+    def result(self, player):
+        if self.game_over and self.get_turn() == 'O':
+            return 0 # player wins
+        # elif self.winner(player^1): return 1 # if opponent wins
+        # elif self.draw(): return 0.5
+    #####
+
     #Creates a copy of the current game object. This may be useful for keeping track of the current game in, perhaps, a tree of some type. 
     def clone(self):
         Clone = breakthrough()
